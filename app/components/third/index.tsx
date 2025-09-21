@@ -3,7 +3,6 @@ import { useScroll, useTransform, motion, useAnimation } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 
 const Benefits = () => {
-  // Tipamos el ref como HTMLDivElement o null (inicialmente es null)
   const container = useRef<HTMLDivElement | null>(null);
   const titleContainer = useRef(null);
 
@@ -17,7 +16,6 @@ const Benefits = () => {
     offset: ["start 70%", "start start"],
   });
 
-  // const translate = useTransform(scrollYProgress, [0, 100], [50, 20]);
   const firstTopText = useTransform(
     ttContainerProgress.scrollYProgress,
     [0, 1],
@@ -35,8 +33,6 @@ const Benefits = () => {
 
   const benefitsYPosition = 150;
 
-  // const firstBenefitY = useTransform(scrollYProgress, [0, 0.33], [benefitsYPosition, 0])
-  // const firstBenefitOpacity = useTransform(scrollYProgress, [0.10, 0.33], [0, 1])
 
   useEffect(() => {
     scrollYProgress.onChange((progress) => {
@@ -46,8 +42,8 @@ const Benefits = () => {
           opacity: 1,
           transition: {
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 150,
+            damping: 20,
           },
         });
       } else {
@@ -56,8 +52,8 @@ const Benefits = () => {
           opacity: 0,
           transition: {
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 150,
+            damping: 20,
           },
         });
       }
@@ -68,8 +64,8 @@ const Benefits = () => {
           opacity: 1,
           transition: {
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 150,
+            damping: 20,
           },
         });
       } else {
@@ -78,8 +74,8 @@ const Benefits = () => {
           opacity: 0,
           transition: {
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 150,
+            damping: 20,
           },
         });
       }
@@ -90,8 +86,8 @@ const Benefits = () => {
           opacity: 1,
           transition: {
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 150,
+            damping: 20,
           },
         });
       } else {
@@ -100,8 +96,8 @@ const Benefits = () => {
           opacity: 0,
           transition: {
             type: "spring",
-            stiffness: 100,
-            damping: 10,
+            stiffness: 150,
+            damping: 20,
           },
         });
       }

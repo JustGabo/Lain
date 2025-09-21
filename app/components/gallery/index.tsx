@@ -45,7 +45,6 @@ const Gallery = () => {
     };
   }, []);
 
-  // Scroll-based animations
   useEffect(() => {
     scrollYProgress.onChange((progress) => {
       if (progress > 0.4) {
@@ -53,24 +52,24 @@ const Gallery = () => {
         textControls.start({
           opacity: 1,
           y: 0,
-          transition: { type: "spring", stiffness: 100, damping: 10 },
+          transition: { type: "spring", stiffness: 150, damping: 20 },
         });
       } else {
         overlayOpacityControl.start({ opacity: 0 });
         textControls.start({
           opacity: 0,
           y: 50,
-          transition: { type: "spring", stiffness: 100, damping: 20 },
+          transition: { type: "spring", stiffness: 150, damping: 20 },
         });
       }
     });
   }, [scrollYProgress, textControls, overlayOpacityControl]);
 
   return (
-    <div className="h-[300dvh] w-full text-[#313131] flex flex-col relative bg-[#E0DCD0]">
+    <div className="h-[150dvh] w-full text-[#313131] flex flex-col relative bg-[#E0DCD0]">
       <div ref={imageScaleContainer} className="absolute w-full h-[200dvh]" />
 
-      <div className="sticky top-0 w-full h-[200dvh] flex items-center justify-center">
+      <div className="sticky top-0 w-full h-[100dvh] flex items-center justify-center">
         <motion.div
           style={{ scale: imageScale, borderRadius: imageRounded }}
           className="w-[100%] overflow-hidden h-[100%] relative"
@@ -98,7 +97,7 @@ const Gallery = () => {
         </motion.h1>
       </div>
 
-      <div
+      {/* <div
         onMouseEnter={() => setShowMask(true)}
         onMouseLeave={() => setShowMask(false)}
         className="w-full mt-[100dvh] z-[50] bg-[#313131] text-[#E0DCD0] flex flex-col items-center"
@@ -141,8 +140,8 @@ const Gallery = () => {
             </p>
           </motion.div>
         </div>
+      </div> */}
         {/* <div className="h-[100dvh] w-full bg-red-500"></div> */}
-      </div>
     </div>
   );
 };
