@@ -6,8 +6,8 @@ const Header = forwardRef<HTMLDivElement, Record<string, unknown>>(
   function Header(props, ref) {
     return (
       <div className={s.header}>
-        <div className="">
-          <h2 className="text-[1.3em] uppercase font-semibold">Lain</h2>
+        <div className="mix-blend-difference bg-black">
+          <h2 className="text-[1.3em] uppercase  mix-blend-difference font-semibold">Lain</h2>
         </div>
         <Magnetic>
          <div className={s.button}>

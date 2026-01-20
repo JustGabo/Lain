@@ -37,7 +37,7 @@ const Gallery = () => {
   }, [scrollYProgress, textControls, overlayOpacityControl]);
 
   return (
-    <div className="h-[150dvh] w-full text-[#313131] flex flex-col relative bg-[#E0DCD0]">
+    <div className="h-[175dvh] w-full text-[#313131] flex flex-col relative bg-[#E0DCD0]">
       <div ref={imageScaleContainer} className="absolute w-full h-[200dvh]" />
 
       <div className="sticky top-0 w-full h-[100dvh] flex items-center justify-center">

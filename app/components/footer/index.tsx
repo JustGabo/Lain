@@ -37,8 +37,8 @@ const Section1 = () => {
 const Section2 = () => {
   return (
     <div className="flex justify-between items-end text-[#00000080] tracking-wide">
-      <h1 className="text-[12vw] leading-[0.8] mt-10">Lain Footer</h1>
-      <p>©copyright</p>
+      <h1 className="text-[17vw] font-medium leading-[0.8] tracking-tight mt-10">Lain Footer</h1>
+      <p className='absolute right-5 bottom-5'>©copyright</p>
     </div>
   );
 };
@@ -46,15 +46,15 @@ const Section2 = () => {
 const Nav = () => {
   return (
     <div className="flex shrink-0 gap-20 pt-20">
-      <div className="flex flex-col gap-2 text-[#00000080] tracking-wide">
-        <h3 className="mb-2 uppercase ">About</h3>
+      <div className="flex flex-col gap-2 font-medium text-[#00000080] tracking-wide">
+        <h3 className="mb-2 uppercase font-bold">About</h3>
         <p>Home</p>
         <p>Projects</p>
         <p>Our Mission</p>
         <p>Contact Us</p>
       </div>
-      <div className="flex flex-col gap-2 text-[#00000080] tracking-wide">
-        <h3 className="mb-2 uppercase ">Education</h3>
+      <div className="flex flex-col gap-2 font-medium text-[#00000080] tracking-wide">
+        <h3 className="mb-2 uppercase font-bold">Education</h3>
         <p>News</p>
         <p>Learn</p>
         <p>Certification</p>

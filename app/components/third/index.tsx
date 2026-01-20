@@ -105,22 +105,22 @@ const Benefits = () => {
   }, []);
 
   return (
-    <div ref={container} className="text-[#585858] mt-10 h-[200dvh] relative">
+    <div ref={container} className="text-[#585858] mt-10 h-[100dvh] relative">
       <div className="h-[100dvh] sticky top-0 w-full">
         <div
           ref={titleContainer}
-          className="w-full h-[50dvh] flex justify-center items-center "
+          className="w-[60vw] mx-auto h-[50dvh] flex flex-col relative justify-center items-center "
         >
           <motion.p
-            style={{ x: firstTopText }}
+            // style={{ x: firstTopText }}
             transition={{ type: "spring" }}
-            className="text-6xl text-[#969696]"
+            className="text-6xl w-full text-[#969696]"
           >
             What will you
           </motion.p>
           <motion.p
-            style={{ y: 55, x: secondTopText }}
-            className="text-6xl font-medium"
+            // style={{ y: 55, x: secondTopText }}
+            className="text-6xl font-medium w-full text-right"
           >
             uncover in each piece?
           </motion.p>
@@ -128,8 +128,8 @@ const Benefits = () => {
 
         <div className="h-[50%] pt-20 flex items-start gap-10 w-full ">
           <motion.div
-            animate={firstAnimateBenefitControl}
-            initial={{ y: benefitsYPosition, opacity: 0 }}
+            // animate={firstAnimateBenefitControl}
+            // initial={{ y: benefitsYPosition, opacity: 0 }}
             className="flex flex-col gap-2 w-full"
           >
             <h4 className="font-semibold">Beyond the Frame</h4>
@@ -141,8 +141,8 @@ const Benefits = () => {
           </motion.div>
 
           <motion.div
-            animate={secondAnimateBenefitControl}
-            initial={{ y: benefitsYPosition, opacity: 0 }}
+            // animate={secondAnimateBenefitControl}
+            // initial={{ y: benefitsYPosition, opacity: 0 }}
             className="flex flex-col gap-2 w-full"
           >
             <h4 className="font-semibold">Textures of Time</h4>
@@ -154,8 +154,8 @@ const Benefits = () => {
           </motion.div>
 
           <motion.div
-            animate={thirdAnimateBenefitControl}
-            initial={{ y: benefitsYPosition, opacity: 0 }}
+            // animate={thirdAnimateBenefitControl}
+            // initial={{ y: benefitsYPosition, opacity: 0 }}
             // style={{ y: thirdBenefitY, opacity: thirdBenefitOpacity }}
             className="flex flex-col gap-2 w-full"
           >
