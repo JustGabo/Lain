@@ -1,5 +1,5 @@
 "use client";
-import { useScroll, useTransform, motion, useAnimation } from "framer-motion";
+import { useScroll, motion, useAnimation } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 
 const Benefits = () => {
@@ -11,21 +11,21 @@ const Benefits = () => {
     offset: ["start start", "end end"],
   });
 
-  const ttContainerProgress = useScroll({
-    target: titleContainer,
-    offset: ["start 70%", "start start"],
-  });
+  // const ttContainerProgress = useScroll({
+  //   target: titleContainer,
+  //   offset: ["start 70%", "start start"],
+  // });
 
-  const firstTopText = useTransform(
-    ttContainerProgress.scrollYProgress,
-    [0, 1],
-    [-30, 80]
-  );
-  const secondTopText = useTransform(
-    ttContainerProgress.scrollYProgress,
-    [0, 1],
-    [60, -80]
-  );
+  // const firstTopText = useTransform(
+  //   ttContainerProgress.scrollYProgress,
+  //   [0, 1],
+  //   [-30, 80]
+  // );
+  // const secondTopText = useTransform(
+  //   ttContainerProgress.scrollYProgress,
+  //   [0, 1],
+  //   [60, -80]
+  // );
 
   const firstAnimateBenefitControl = useAnimation();
   const secondAnimateBenefitControl = useAnimation();
